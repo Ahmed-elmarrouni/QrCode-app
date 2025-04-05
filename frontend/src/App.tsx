@@ -26,7 +26,6 @@ function App() {
   const downloadQRCodeAsPDF = () => {
     const doc = new jsPDF();
 
-    // Generate the QR code canvas
     const canvas = document.getElementById("qrCodeCanvas") as HTMLCanvasElement;
 
     if (canvas) {
@@ -36,7 +35,6 @@ function App() {
       doc.addImage(imgData, "PNG", 60, 50, 80, 80);  
       doc.text("Booking QR Code Pls be there on the time ", 50, 145);
 
-      // Save the PDF
       doc.save("qr-code-booking.pdf");
     }
 
