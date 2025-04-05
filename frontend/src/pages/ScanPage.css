@@ -1,0 +1,130 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f8f9, #cce7dd);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 550px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e7ef;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px dashed #b2d8c0;
+    background-color: #f5fbf7;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #eaf8ef;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+button:hover {
+    background-color: #23923d;
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.4);
+}
+
+button:disabled {
+    background-color: #9cc9a8;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.alert {
+    background-color: #e9f8ee;
+    color: #2e7d32;
+    border-left: 5px solid #28a745;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.alert.error {
+    background-color: #fcebea;
+    color: #c62828;
+    border-left: 5px solid #e53935;
+}
+
+p {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #444;
+    word-break: break-word;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button,
+    input[type="file"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
